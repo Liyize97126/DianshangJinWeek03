@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/commodity_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/zhanpict"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/commodity_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥0.0"
+            android:textColor="#FF0000"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/commodity_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="×1"
+            android:textColor="#000000"
+            android:layout_below="@id/commodity_price"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/commodity_price">
+
+            <TextView
+                android:id="@+id/commodity_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品名称"
+                android:textColor="#000000"
+                android:textSize="22sp"/>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
